@@ -4,11 +4,14 @@ rem url_list can be for videos and playlists
 rem ^ needs to be written as ^^, > needs to be written as ^>, ^is used for multi-line
 
 rem 1080p24
+rem 2800
 rem avc 2.91>vp9 2.08,71.4
 
 rem 1080p30
+rem 2900
 rem avc 3.61>vp9 2.65,73.4
 rem avc 3.63>vp9 16.5,45.4
+rem avc 2.99>vp9 26.5,88.5
 
 rem 1080p60
 rem avc 2.73<vp9 2.24,82.1
@@ -20,7 +23,7 @@ bestvideo[height^>=1080][fps^>30][vcodec^^=av01]+bestaudio/^
 bestvideo[height^>=1080][fps^>30][vcodec^^=vp9]+bestaudio/^
 bestvideo[height^>=1080][fps^>30][vcodec^^=avc]+bestaudio/^
 bestvideo[height^>=1080][fps=30][vcodec^^=av01]+bestaudio/^
-bestvideo[height^>=1080][fps=30][vcodec^^=avc1][vbr^>=3500]+bestaudio/^
+bestvideo[height^>=1080][fps=30][vcodec^^=avc1][vbr^>=2900]+bestaudio/^
 bestvideo[height^>=1080][fps=30][vcodec=vp9]+bestaudio/^
 bestvideo[height^>=1080][fps=30][vcodec^^=avc1]+bestaudio/^
 bestvideo[height^>=1080][fps^>24][vcodec^^=av01]+bestaudio/^
