@@ -46,5 +46,5 @@ bestvideo[height^>=720][vcodec^^=av01]+bestaudio/^
 bestvideo[height^>=720][vcodec=vp9]+bestaudio/^
 bestvideo[height^>=720][vcodec^^=avc1]+bestaudio
 
-youtube-dl -o "%~dp1%%(title)s" -f "%formats%" --batch-file %1
+youtube-dl -o "%~dp1%%(title)s %%(vcodec)s" -f "%formats%" --batch-file %1
 pause
