@@ -9,9 +9,9 @@ rem avc 2.91>vp9 2.08,71.4
 
 rem 1080p30
 rem 2600
+rem avc 2.99>vp9 2.65,88.5
 rem avc 3.61>vp9 2.65,73.4
 rem avc 3.63>vp9 1.65,45.4
-rem avc 2.99>vp9 2.65,88.5
 rem avc 2.61>vp9 0.98,37.7
 
 rem 1080p60
