@@ -3,6 +3,7 @@ rem drag url_list.txt onto this .bat file to run
 
 
 
+if NOT "%~1"=="" youtube-dl --get-title --batch-file %1
 if NOT "%~1"=="" youtube-dl --list-formats --batch-file %1
 if NOT "%~1"=="" pause
 
