@@ -1,8 +1,8 @@
 rem drag url_list.txt onto this .bat file to run
 rem url_list can be for videos and playlists
 
-rem 1080p: 399,137,238: av1,avc,vp9
-rem  720p: 398,247,136: av1,vp9,avc
+rem 1080p: av1>avc>vp9
+rem  720p: av1>vp9>avc
 
-youtube-dl -o "%~dp1%%(title)s" -f 399+bestaudio/137+bestaudio/248+bestaudio/398+bestaudio/247+bestaudio/136+bestaudio --batch-file %1
+youtube-dl -o "%~dp1%%(title)s" -f "bestvideo[height>=1080][vcodec^=av01]+bestaudio/bestvideo[height>=1080][vcodec^=avc1]+bestaudio/bestvideo[height>=1080][vcodec=vp9]+bestaudio/bestvideo[height>=720][vcodec^=av01]+bestaudio/bestvideo[height>=720][vcodec=vp9]+bestaudio/bestvideo[height>=720][vcodec^=avc1]+bestaudio/" --batch-file %1
 pause
