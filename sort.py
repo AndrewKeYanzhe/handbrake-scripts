@@ -1,5 +1,6 @@
 import sys
 import os
+from shutil import copyfile
 
 print(sys.argv[1])
 directory = sys.argv[1]
@@ -21,10 +22,14 @@ for filename in os.listdir(directory):
         best_eqv_size=0
         best_codec=""
         sizes={}
+        # video_names=[]
+        video_paths=[]
 
         for file in os.listdir(directory):
             if file.startswith(video_title):
-                size = os.path.getsize(os.path.join(directory, file))/10**6
+                video_path = os.path.join(directory, file)
+                video_paths.append(video_path)
+                size = os.path.getsize(video_path)/10**6
                 codec = file.split(" codec=")[1].split(".")[0]                
 
                 quality = {
@@ -42,9 +47,13 @@ for filename in os.listdir(directory):
                     best_codec = codec                    
 
         vp9_avc_ratio = sizes["vp9"]/sizes["avc1"]
-        
+        for video_path in video_paths:
+            if best_codec in video_path:
+                copyfile(video_path,os.path.join(directory,'..', "Input",video_title + "." + video_path.split(".")[-1]))
+
         print("vp9/avc: {:.0%}".format(vp9_avc_ratio))
         print(best_codec)
+
         print("")
 
 
