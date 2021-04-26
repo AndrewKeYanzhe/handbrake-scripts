@@ -14,4 +14,5 @@ FOR %%i IN (%1\*.*) DO (
 	del "%%i"
 )
 
-pause
+if NOT "%2"=="no_pause" pause
+rem pause
