@@ -33,3 +33,4 @@ This collection of scripts aims to
     * Move all 3 videos from `Download/` to `Archive/`
 3. Open `Input/` folder with `upscale_8K.bat`. This will
     * Read all the videos in `Input/`, encode in 8K and save in `Output/`
+    * Delete the videos in `Input/`
