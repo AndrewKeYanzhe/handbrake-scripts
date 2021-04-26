@@ -13,7 +13,7 @@ This collection of scripts aims to
 # Usage
 
 1. Clone repo
-2. Drag `sample_url.txt` to open with `download.bat`. This will
+2. Drag `sample_url.txt` to open with `download.bat`. Alternatively, launch `download.bat` with no arguments, then paste URL when prompted. This will
     * Save each video in all 3 codecs to `Download/`
 3. Drag `Download/` folder to open with `sort.bat`. This will
     * Determine which codec gives the best quality
