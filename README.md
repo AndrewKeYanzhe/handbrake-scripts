@@ -13,11 +13,11 @@ This collection of scripts aims to
 # Usage
 
 1. Clone repo
-2. Drag `sample_url.txt` to open with `download.bat`. Alternatively, launch `download.bat` with no arguments, then paste URL when prompted. This will
+2. Open `sample_url.txt` with `download.bat`. Alternatively, launch `download.bat` with no arguments, then paste URL when prompted. This will
     * Save each video in all 3 codecs to `Download/`
-3. Drag `Download/` folder to open with `sort.bat`. This will
+3. Open `Download/` folder with `sort.bat`. This will
     * Determine which codec gives the best quality
     * Copy video with best quality from `Download/` to `Input/`
     * Move all 3 videos from `Download/` to `Archive/`
-4. Drag `Input/` folder to open with `upscale_8K.bat`. This will
+4. Open `Input/` folder with `upscale_8K.bat`. This will
     * Read all the videos in `Input/`, encode in 8K and save in `Output/`
