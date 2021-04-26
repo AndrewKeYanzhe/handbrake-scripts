@@ -1,4 +1,4 @@
-rem drag url_listtxt onto this bat file to run
+rem drag url_list.txt onto this bat file to run
 rem url_list can be for videos and playlists
 rem video is downloaded in all 3 codecs if available
 
