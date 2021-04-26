@@ -20,6 +20,7 @@ for filename in os.listdir(directory):
 
         best_eqv_size=0
         best_codec=""
+        sizes={}
 
         for file in os.listdir(directory):
             if file.startswith(video_title):
@@ -28,10 +29,11 @@ for filename in os.listdir(directory):
 
                 quality = {
                     "avc1":1,
-                    "vp9":1.39,
-                    "av01":2.17
-                }
+                    "vp9":1/0.72,
+                    "av01":1/0.46
+                }                
                 eqv_size = size*quality[codec]
+                sizes[codec]=size
 
                 print("{0:4s}: {1:6.1f},{2:6.1f}".format(codec,size,eqv_size))
 
@@ -39,6 +41,7 @@ for filename in os.listdir(directory):
                     best_eqv_size = eqv_size
                     best_codec = codec                    
 
+        print("vp9/avc: {:.0%}".format(sizes["vp9"]/sizes["avc1"]))
         print(best_codec)
         print("")
 
@@ -47,5 +50,4 @@ for filename in os.listdir(directory):
     else:
         continue
 
-print("")
 print(len(video_titles))
