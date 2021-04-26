@@ -3,19 +3,24 @@ rem drag urls.txt onto this .bat file to run
 
 
 if NOT "%~1"=="" (
-	youtube-dl --get-title --batch-file %1
-	youtube-dl --list-formats --batch-file %1
-	pause
-	EXIT /B
+	set video_source=--batch-file %1
 	)
 
 
-
-
 :START
-set /P urls=Enter URL 
-echo %urls%
-youtube-dl --get-title %urls%
-youtube-dl --list-formats %urls%
+
+
+if "%~1"=="" (
+	set /P video_source=Enter URL 
+)
+
+
+
+
+
+youtube-dl --get-title %video_source%
+youtube-dl --list-formats %video_source%
+
 
 if "%~1"=="" GOTO START
+if NOT "%~1"=="" pause
