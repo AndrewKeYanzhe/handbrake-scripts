@@ -29,7 +29,7 @@ for filename in os.listdir(directory):
 
                 quality = {
                     "avc1":1,
-                    "vp9":1/0.72,
+                    "vp9":1/0.77,
                     "av01":1/0.46
                 }                
                 eqv_size = size*quality[codec]
