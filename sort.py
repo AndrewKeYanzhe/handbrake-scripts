@@ -51,7 +51,7 @@ for filename in os.listdir(directory):
         for video_path in video_paths:
             if best_codec in video_path:
                 copyfile(video_path,os.path.join(directory,'..', "Input",video_title + "." + video_path.split(".")[-1]))
-            move(video_path,os.path.join(directory,'..', "Processed",Path(video_path).name))
+            move(video_path,os.path.join(directory,'..', "Archive",Path(video_path).name))
 
         print("vp9/avc: {:.0%}".format(vp9_avc_ratio))
         print(best_codec)
