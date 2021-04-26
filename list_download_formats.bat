@@ -1,21 +1,18 @@
-@ECHO OFF
 rem drag urls.txt onto this .bat file to run
 
 
+@ECHO OFF
+
+rem for launching with url.txt
 if NOT "%~1"=="" (
 	set video_source=--batch-file %1
 	)
 
-
+rem for launching directly and pasting URL
 :START
-
-
 if "%~1"=="" (
 	set /P video_source=Enter URL 
 )
-
-
-
 
 
 youtube-dl --get-title %video_source%
