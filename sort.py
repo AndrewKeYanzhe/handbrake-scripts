@@ -41,7 +41,9 @@ for filename in os.listdir(directory):
                     best_eqv_size = eqv_size
                     best_codec = codec                    
 
-        print("vp9/avc: {:.0%}".format(sizes["vp9"]/sizes["avc1"]))
+        vp9_avc_ratio = sizes["vp9"]/sizes["avc1"]
+        
+        print("vp9/avc: {:.0%}".format(vp9_avc_ratio))
         print(best_codec)
         print("")
 
