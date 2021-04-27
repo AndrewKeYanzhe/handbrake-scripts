@@ -20,8 +20,8 @@ This collection of scripts aims to
 ## Usage
 
 1.  Open `sample_url.txt` with `run_all.bat`. Alternatively, launch `run_all.bat` with no arguments, then paste URL when prompted. This will
-    * Save each video in all 3 codecs to `Archive/`
-    * Save encoded 8K video in `Output/`
+    * Save each video in all 3 codecs to **./Archive/**
+    * Save encoded 8K video in **./Output/**
 
 ### Alternative method
 
