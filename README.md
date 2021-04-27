@@ -26,11 +26,11 @@ This collection of scripts aims to
 ### Alternative method
 
 1. Open `sample_url.txt` with `download.bat`. Alternatively, launch `download.bat` with no arguments, then paste URL when prompted. This will
-    * Save each video in all 3 codecs to `Download/`
-2. Open `Download/` folder with `sort.bat`. This will
+    * Save each video in all 3 codecs to **./Download/**
+2. Open **./Download/** folder with `sort.bat`. This will
     * Determine which codec gives the best quality
-    * Copy video with best quality from `Download/` to `Input/`
-    * Move all 3 videos from `Download/` to `Archive/`
-3. Open `Input/` folder with `upscale_8K.bat`. This will
-    * Read all the videos in `Input/`, encode in 8K and save in `Output/`
-    * Delete the videos in `Input/`
+    * Copy video with best quality from **./Download/** to **./Input/**
+    * Move all 3 videos from `Download/` to **./Archive/**
+3. Open **./Input/** folder with `upscale_8K.bat. This will
+    * Read all the videos in **./Input/**, encode in 8K and save in **./Output/**
+    * Delete the videos in **./Input/**
