@@ -6,7 +6,7 @@
     * If the user clicks on file 1 to drag, order will be 1-5
     * If the user clicks on file 3 to drag, order will be 3-5, 1-2
 2. **Video order on YouTube channel page depends on publish order**
-3. **YouTube cannot publish a video until after SD has finished processing. This may cause video order to be scrambled.** For example:
+3. **YouTube cannot publish a video until after SD version has finished processing. This may cause video order to be scrambled.** For example:
     * Video A is marked to be published earlier than video B
     * Video A takes a longer time to process SD version
     * Video A may end up being published after video B.
