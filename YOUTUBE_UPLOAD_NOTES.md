@@ -1,7 +1,4 @@
-# Additional Notes
-
-## Tips for uploading to YouTube
-
+# Tips for uploading to YouTube
 * **Initial upload order depends on the selection's file order in File Explorer + which file is clicked.** E.g. 5 files are selected in file explorer, ordered 1-5. 
     * If the user clicks on file 1 to drag, order will be 1-5
     * If the user clicks on file 3 to drag, order will be 3-5, 1-2
