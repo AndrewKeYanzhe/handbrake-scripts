@@ -1,3 +1,4 @@
+rem run this .bat and paste youtube link, or
 rem drag urls.txt onto this .bat file to run
 
 
@@ -15,8 +16,8 @@ if "%~1"=="" (
 )
 
 
-youtube-dl --get-title %video_source%
-youtube-dl --list-formats %video_source%
+youtube-dl --get-title "%video_source%"
+youtube-dl --list-formats "%video_source%"
 
 
 if "%~1"=="" GOTO START
