@@ -27,7 +27,7 @@ for filename in os.listdir(directory):
         video_paths=[]
 
         for file in os.listdir(directory):
-            if file.startswith(video_title):
+            if file.startswith(video_title+" codec="):
                 video_path = os.path.join(directory, file)
                 video_paths.append(video_path)
                 size = os.path.getsize(video_path)/10**6
