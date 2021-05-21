@@ -1,4 +1,14 @@
+FOR /F "tokens=* delims=" %%x in (parameters.txt) DO (
+	set start_in=%%x
+	goto :finished_reading_parameters
+)
+:finished_reading_parameters
+rem echo %start_in% 
+
+
+
 set download_folder_name=Download
+set download_path=%start_in%\%download_folder_name%\
 
 rem for launching with arguments - url.txt or ask_url
 if NOT "%~1"=="" (
@@ -12,7 +22,7 @@ rem for launching with no arguments and pasting URL
 if "%~1"=="" set /P video_source=Enter URL 
 
 
-set download_path=%~dp1%download_folder_name%\
+
 
 set prefer_av1=^
 bestvideo[vcodec^^=av01]+bestaudio/^

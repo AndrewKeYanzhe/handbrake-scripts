@@ -1,5 +1,13 @@
 @ECHO OFF
 
+FOR /F "tokens=* delims=" %%x in (parameters.txt) DO (
+	set start_in=%%x
+	goto :finished_reading_parameters
+)
+:finished_reading_parameters
+rem echo %start_in% 
+
+
 set output_folder_name=Output
 set handbrakePath=E:Tools\HandBrakeCLI\HandBrakeCLI.exe
 
