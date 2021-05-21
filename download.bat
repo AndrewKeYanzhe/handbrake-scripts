@@ -1,13 +1,13 @@
 set download_folder_name=Download
 
-rem for launching with url.txt
+rem for launching with arguments - url.txt or ask_url
 if NOT "%~1"=="" (
 	rem echo hi
 	if NOT "%~1"=="ask_url" set video_source=--batch-file %1
 	if "%~1"=="ask_url" set /P video_source=Enter URL 
 	)
 
-rem for launching directly and pasting URL
+rem for launching with no arguments and pasting URL
 :START
 if "%~1"=="" set /P video_source=Enter URL 
 
